@@ -1,7 +1,7 @@
-// import "./sass/main.scss";
 import Header from './components/header/Header'
-import SideBar from './components/sidebar/SideBar'
+import SideNav from './components/sidenav/SideNav'
 import './App.scss'
+import Gallery from './components/gallery/Gallery'
 
 function App() {
 	return (
@@ -9,8 +9,10 @@ function App() {
 			<div className="container">
 				<Header/>
 				<div className="content">
-					<SideBar/>
-					<main className="hotel-view">Hotel view</main>
+					<SideNav/>
+					<main className="hotel-view">
+						<Gallery/>
+					</main>
 				</div>
 			</div>
 		</div>
