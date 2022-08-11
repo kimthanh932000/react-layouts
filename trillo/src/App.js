@@ -1,7 +1,9 @@
+import './App.scss'
 import Header from './components/header/Header'
 import SideNav from './components/sidenav/SideNav'
-import './App.scss'
 import Gallery from './components/gallery/Gallery'
+import Overview from "./components/overview/Overview";
+import Main from './components/main/Main'
 
 function App() {
 	return (
@@ -10,9 +12,10 @@ function App() {
 				<Header/>
 				<div className="content">
 					<SideNav/>
-					<main className="hotel-view">
+					<Main>
 						<Gallery/>
-					</main>
+						<Overview/>
+					</Main>
 				</div>
 			</div>
 		</div>
